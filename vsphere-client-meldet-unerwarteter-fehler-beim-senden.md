@@ -15,3 +15,26 @@ Danach können wir schon mit der Installation von den VMWare Tools selbst starte
 sudo apt-get remove --purge open-vm* -y
 sudo apt-get autoremove -y
 ```
+
+### Mounten des VMWare-Tools CD Image
+
+```
+sudo mkdir -p /media/cdrom
+sudo mount /dev/cdrom /media/cdrom
+```
+
+### Kopieren des komprimierten VMWare-Tools Archives nach /tmp
+
+```
+cp /media/cdrom/VM*.tar.gz /tmp
+sudo umount /media/cdrom
+cd /tmp
+```
+
+### Entpacken des VMWare-Tools Archives sowie Beginn der Installation
+
+```
+tar xzvf VM*.tar.gz
+cd vmware-tools-distrib
+sudo ./vmware-install.pl
+```
