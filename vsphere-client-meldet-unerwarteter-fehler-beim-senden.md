@@ -38,3 +38,7 @@ tar xzvf VM*.tar.gz
 cd vmware-tools-distrib
 sudo ./vmware-install.pl
 ```
+
+Der Installer wird ein paar mal nach Bestätigen fragen welche wir jeweils mit Enter bestätigen müssen.
+
+Sobald die Installation abgeschlossen ist können wir den Server neustarten und er sollte uns im vSphere Client als “Wird ausgeführt (Aktuell)” angezeigt werden.
